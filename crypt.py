@@ -6,10 +6,10 @@ from argparse import ArgumentParser
 #This is a vulnerable implementation of RC4 never ever do this!
 
 def enc(key,p):
-		return ARC4.new(key).encrypt(p)
+	return ARC4.new(key).encrypt(p)
 
 def dec(key,msg):
-		return ARC4.new(key).decrypt(msg)
+	return ARC4.new(key).decrypt(msg)
 
 def readFile(fileName):
     with open (fileName, "r") as infile:
@@ -34,4 +34,4 @@ def main():
     print(base64.b64encode(encrypted)) 
 
 if __name__=='__main__':
-		main()
+	main()
