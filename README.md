@@ -9,7 +9,7 @@ In order for this to work you need the ability to encrypt a known plaintext or y
 corresponding ciphertext.
 
 ## 2. The cipher system must use a static key.
-A vulnerable implementation should something like this.
+A vulnerable implementation should look something like this.
 ```python
 key = 'Never ever use the same key more than once!!!!'
 encrypted = enc(key, plaintext)
