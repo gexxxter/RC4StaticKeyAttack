@@ -30,7 +30,7 @@ H4FXzKw=
 ```
 Notice the identical ciphertexts.
 
-# Example
+# Usage
 Find a vulnerable encryptio system and let it encrypt a known plaintext.
 Store the corresponding ciphertext.
 Then pass the known plaintext, known ciphertext and the ciphertext you want to crack to rc4Cracker.py
