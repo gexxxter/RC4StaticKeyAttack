@@ -10,7 +10,8 @@ def readFile(fileName):
 
 def main():
     description = """ 
-    This is cracker yo
+    Decrypts RC4 ciphertexts with static keys.
+    The arguments need to be files, output is delivered via stdout.
     """
     parser = ArgumentParser(description=description)
     parser.add_argument("knownPlaintext", help="Known Plaintext")

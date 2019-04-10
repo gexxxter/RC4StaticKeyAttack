@@ -24,10 +24,10 @@ def main():
     Find more information in the Readme.md
     """
     parser = ArgumentParser(description=description)
-    parser.add_argument("plaintext", help="Data to encrypt")
+    parser.add_argument("inFile", help="File to encrypt")
     args = parser.parse_args()
    
-    plaintext =  readFile(args.plaintext)
+    plaintext =  readFile(args.inFile)
     
     key = 'Never ever use the same key more than once!!!!'
     encrypted = enc(key, plaintext)
